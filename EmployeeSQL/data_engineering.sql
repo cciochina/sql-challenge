@@ -34,7 +34,7 @@ CREATE TABLE employees(
 
 CREATE TABLE salaries(
 	    emp_no INT NOT NULL,
-	    salary MONEY NOT NULL,
+	    salary INT NOT NULL,
 	    FOREIGN KEY(emp_no) REFERENCES employees(emp_no)
 );
 
@@ -63,3 +63,4 @@ SELECT * FROM employees
 SELECT * FROM salaries
 SELECT * FROM dept_manager
 SELECT * FROM dept_emp
+
